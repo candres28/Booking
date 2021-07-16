@@ -1,0 +1,4 @@
+co/com/devco/certification/runners/SearchStaysRunner.java
+ co.com.devco.certification.runners.SearchStaysRunner
+co/com/devco/certification/stepdefinitions/SearchStaysStepDefinitions.java
+ co.com.devco.certification.stepdefinitions.SearchStaysStepDefinitions
