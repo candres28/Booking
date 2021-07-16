@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Book accommodation on the Booking" skipped="0" tests="3" time="5.11" timestamp="2021-07-16 05:59:09"><testcase name="Book Hotel with the best offer"/><testcase name="Book hotel in maximum $ COP 20000"/><testcase name="Book hotel with 2 rooms with kitchen"/></testsuite>

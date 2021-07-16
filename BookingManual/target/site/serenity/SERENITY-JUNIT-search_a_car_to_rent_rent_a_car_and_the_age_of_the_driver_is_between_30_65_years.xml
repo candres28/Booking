@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Search a car to rent" skipped="0" tests="2" time="3.0" timestamp="2021-07-16 05:59:14"><testcase name="Rent a car and the age of the driver is between 30-65 years"/><testcase name="Rent a car and the age of the driver is random"/></testsuite>

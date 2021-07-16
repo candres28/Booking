@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Book accommodation on the Booking","Book Hotel with the best offer","SUCCESS","2021-07-16T17:59:09.3682031-05:00[America/Bogota]","0.0","2.43"
+"Book accommodation on the Booking","Book hotel in maximum $ COP 20000","SUCCESS","2021-07-16T17:59:11.8076403-05:00[America/Bogota]","0.0","1.34"
+"Book accommodation on the Booking","Book hotel with 2 rooms with kitchen","SUCCESS","2021-07-16T17:59:13.1598249-05:00[America/Bogota]","0.0","1.34"
