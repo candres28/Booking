@@ -1,9 +1,19 @@
 package co.com.devco.certification.userinterfaces;
 
 import net.serenitybdd.screenplay.targets.Target;
+import org.openqa.selenium.By;
 
 public class HomePage {
 
     public static final Target BUTTON_STAYS = Target.the("select option stays")
            .locatedBy("//span[contains(text(),'Alojamiento')]");
+
+    public static final Target BUTTON_FLIGHTS = Target.the("select option flights")
+            .locatedBy("//span[contains(text(),'Vuelos')]");
+
+    public static final Target BUTTON_MAKE_ACCOUNT = Target.the("Button make an account")
+            .locatedBy("//span[contains(text(),'una cuenta')]");
+
+    public static final Target LABEL_YOUR_ACCOUNT = Target.the("Label your account")
+            .located(By.id("profile-menu-trigger--title"));
 }
