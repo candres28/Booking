@@ -17,8 +17,11 @@ public class TaxiPage {
     public static final Target BUTTON_PICKUP = Target.the("Button pickup date")
             .locatedBy("//button[@aria-label='pickup date input field']");
 
-    public static final Target SELECT_DATE = Target.the("select pickup date {0}")
-            .locatedBy("//a[@aria-label='{0}']");
+    public static final Target INPUT_DATE_TAXI = Target.the("Button pickup date")
+            .locatedBy("//*[@class='rw-c-date-picker__calendar-caption']");
+
+    public static final Target SELECT_DAY = Target.the("select pickup date {0}")
+            .locatedBy("//a[text()='{0}']");
 
     public static final Target BUTTON_HOUR = Target.the("Button option hour")
             .locatedBy("//button[@aria-label='pickup time input field']");

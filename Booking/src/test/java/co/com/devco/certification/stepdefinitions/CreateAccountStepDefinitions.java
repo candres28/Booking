@@ -11,7 +11,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 
 import java.util.List;
 
-import static co.com.devco.certification.userinterfaces.HomePage.*;
+import static co.com.devco.certification.userinterfaces.HomePage.LABEL_YOUR_ACCOUNT;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -29,7 +29,7 @@ public class CreateAccountStepDefinitions {
 
     @Then("^he will be able to see the option (.*)$")
     public void HeWillBeAbleToSeeTheOptionTuCuenta(String message) {
-        OnStage.theActorInTheSpotlight().should(seeThat(Message.isTo(LABEL_YOUR_ACCOUNT),equalTo(message)));
+        OnStage.theActorInTheSpotlight().should(seeThat(Message.isTo(LABEL_YOUR_ACCOUNT), equalTo(message)));
     }
 
 }

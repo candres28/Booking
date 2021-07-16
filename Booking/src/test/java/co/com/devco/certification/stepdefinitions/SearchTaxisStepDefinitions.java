@@ -1,9 +1,11 @@
 package co.com.devco.certification.stepdefinitions;
 
 import co.com.devco.certification.models.Taxi;
+import co.com.devco.certification.questions.Message;
 import co.com.devco.certification.tasks.OpenWeb;
 import co.com.devco.certification.tasks.SearchTaxi;
 import co.com.devco.certification.tasks.SelectOptionTaxis;
+import co.com.devco.certification.userinterfaces.SearchTaxiPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -11,9 +13,12 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 
 import java.util.List;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class SearchTaxisStepDefinitions {
 
@@ -29,7 +34,7 @@ public class SearchTaxisStepDefinitions {
     @Given("^The user is on the website of the reservation page and enters the data to search for a taxi$")
     public void the_user_is_on_the_website_of_the_reservation_page_and_enters_the_data_to_search_for_a_taxi(List<Taxi> taxiList) {
         OnStage.theActorInTheSpotlight().wasAbleTo(OpenWeb.site()
-        , SearchTaxi.withData(taxiList.get(0)));
+                , SearchTaxi.withData(taxiList.get(0)));
     }
 
     @When("^he need Add you return date (.*)$")
@@ -37,8 +42,9 @@ public class SearchTaxisStepDefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(SelectOptionTaxis.toSearch(date));
     }
 
-    @Then("^he can see the total price$")
-    public void he_can_see_the_total_price() {
+    @Then("^he can see the total price (.*)$")
+    public void he_can_see_the_total_price(String price) {
+        OnStage.theActorInTheSpotlight().should(seeThat(Message.isTo(SearchTaxiPage.LABEL_PRICE), Matchers.containsString(price)));
 
     }
 

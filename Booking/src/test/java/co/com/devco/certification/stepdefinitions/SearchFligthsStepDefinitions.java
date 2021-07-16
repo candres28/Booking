@@ -31,6 +31,6 @@ public class SearchFligthsStepDefinitions {
 
     @Then("^you can see the list of options and the (.*) button$")
     public void YouCanSeeTheListOfOptionsAndTheButton(String message) {
-        OnStage.theActorInTheSpotlight().should(seeThat(Message.isTo(SearchFlightsPage.LABEL_OFFER),equalTo(message)));
+        OnStage.theActorInTheSpotlight().should(seeThat(Message.isTo(SearchFlightsPage.LABEL_OFFER), equalTo(message)));
     }
 }

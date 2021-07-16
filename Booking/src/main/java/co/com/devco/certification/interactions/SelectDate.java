@@ -1,12 +1,13 @@
 package co.com.devco.certification.interactions;
 
-import co.com.devco.certification.userinterfaces.StayPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.targets.Target;
+
+import static co.com.devco.certification.userinterfaces.HomePage.BUTTON_NEXT;
 
 public class SelectDate implements Interaction {
     private final String date;
@@ -31,7 +32,7 @@ public class SelectDate implements Interaction {
 
         while (!Text.of(targetYear).viewedBy(actor).asString().trim().equals(yearMonth)) {
             actor.attemptsTo(
-                    Click.on(StayPage.BUTTON_NEXT)
+                    Click.on(BUTTON_NEXT)
             );
         }
         actor.attemptsTo(Click.on(targetDay.of(day)));

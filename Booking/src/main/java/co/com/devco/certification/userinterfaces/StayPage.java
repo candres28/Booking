@@ -14,9 +14,6 @@ public class StayPage {
     public static final Target INPUT_YEAR = Target.the("input year")
             .locatedBy("//div[@class='bui-calendar__month']");
 
-    public static final Target BUTTON_NEXT = Target.the("button next")
-            .locatedBy("//*[@class='bui-calendar__control bui-calendar__control--next' or @id='stl-jam-cal-nextMonth']");
-
     public static final Target INPUT_DAY = Target.the("input day {0}")
             .locatedBy("//span[text()='{0}']");
 
