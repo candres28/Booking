@@ -1,11 +1,15 @@
-co/com/devco/certification/runners/SearchStaysRunner.java
- co.com.devco.certification.runners.SearchStaysRunner
+co/com/devco/certification/stepdefinitions/SearchTaxisStepDefinitions.java
+ co.com.devco.certification.stepdefinitions.SearchTaxisStepDefinitions
 co/com/devco/certification/runners/CreateAccountRunner.java
  co.com.devco.certification.runners.CreateAccountRunner
 co/com/devco/certification/runners/SearchFligthsRunner.java
  co.com.devco.certification.runners.SearchFligthsRunner
+co/com/devco/certification/runners/SearchStaysRunner.java
+ co.com.devco.certification.runners.SearchStaysRunner
 co/com/devco/certification/stepdefinitions/CreateAccountStepDefinitions.java
  co.com.devco.certification.stepdefinitions.CreateAccountStepDefinitions
+co/com/devco/certification/runners/SearchTaxisRunner.java
+ co.com.devco.certification.runners.SearchTaxisRunner
 co/com/devco/certification/stepdefinitions/SearchFligthsStepDefinitions.java
  co.com.devco.certification.stepdefinitions.SearchFligthsStepDefinitions
 co/com/devco/certification/stepdefinitions/SearchStaysStepDefinitions.java

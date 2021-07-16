@@ -1,36 +1,48 @@
-co/com/devco/certification/models/Stay.java
- co.com.devco.certification.models.Stay
-co/com/devco/certification/tasks/OpenWeb.java
- co.com.devco.certification.tasks.OpenWeb
-co/com/devco/certification/tasks/SelectOptionStays.java
- co.com.devco.certification.tasks.SelectOptionStays
-co/com/devco/certification/userinterfaces/StayPage.java
- co.com.devco.certification.userinterfaces.StayPage
-co/com/devco/certification/userinterfaces/SearchStaysPage.java
- co.com.devco.certification.userinterfaces.SearchStaysPage
 co/com/devco/certification/questions/StayValidate.java
  co.com.devco.certification.questions.StayValidate
-co/com/devco/certification/userinterfaces/SearchFlightsPage.java
- co.com.devco.certification.userinterfaces.SearchFlightsPage
-co/com/devco/certification/questions/Message.java
- co.com.devco.certification.questions.Message
-co/com/devco/certification/models/Flight.java
- co.com.devco.certification.models.Flight
-co/com/devco/certification/userinterfaces/FlightPage.java
- co.com.devco.certification.userinterfaces.FlightPage
-co/com/devco/certification/tasks/SelectOptionFlights.java
- co.com.devco.certification.tasks.SelectOptionFlights
-co/com/devco/certification/interactions/SelectInTheList.java
- co.com.devco.certification.interactions.SelectInTheList
-co/com/devco/certification/userinterfaces/HomePage.java
- co.com.devco.certification.userinterfaces.HomePage
-co/com/devco/certification/tasks/SearchFlights.java
- co.com.devco.certification.tasks.SearchFlights
+co/com/devco/certification/userinterfaces/SearchStaysPage.java
+ co.com.devco.certification.userinterfaces.SearchStaysPage
+co/com/devco/certification/models/Taxi.java
+ co.com.devco.certification.models.Taxi
 co/com/devco/certification/models/Account.java
  co.com.devco.certification.models.Account
-co/com/devco/certification/tasks/SearchStays.java
- co.com.devco.certification.tasks.SearchStays
+co/com/devco/certification/tasks/OpenWeb.java
+ co.com.devco.certification.tasks.OpenWeb
 co/com/devco/certification/tasks/RegisterAccount.java
  co.com.devco.certification.tasks.RegisterAccount
+co/com/devco/certification/models/Flight.java
+ co.com.devco.certification.models.Flight
+co/com/devco/certification/userinterfaces/TaxiPage.java
+ co.com.devco.certification.userinterfaces.TaxiPage
+co/com/devco/certification/tasks/SearchTaxi.java
+ co.com.devco.certification.tasks.SearchTaxi
+co/com/devco/certification/tasks/SelectOptionTaxis.java
+ co.com.devco.certification.tasks.SelectOptionTaxis
+co/com/devco/certification/userinterfaces/SearchFlightsPage.java
+ co.com.devco.certification.userinterfaces.SearchFlightsPage
 co/com/devco/certification/userinterfaces/RegisterPage.java
  co.com.devco.certification.userinterfaces.RegisterPage
+co/com/devco/certification/questions/Message.java
+ co.com.devco.certification.questions.Message
+co/com/devco/certification/utils/SearchPrice.java
+ co.com.devco.certification.utils.SearchPrice
+co/com/devco/certification/tasks/SelectOptionFlights.java
+ co.com.devco.certification.tasks.SelectOptionFlights
+co/com/devco/certification/models/Stay.java
+ co.com.devco.certification.models.Stay
+co/com/devco/certification/userinterfaces/HomePage.java
+ co.com.devco.certification.userinterfaces.HomePage
+co/com/devco/certification/tasks/SelectOptionStays.java
+ co.com.devco.certification.tasks.SelectOptionStays
+co/com/devco/certification/userinterfaces/SearchTaxiPage.java
+ co.com.devco.certification.userinterfaces.SearchTaxiPage
+co/com/devco/certification/tasks/SearchFlights.java
+ co.com.devco.certification.tasks.SearchFlights
+co/com/devco/certification/userinterfaces/FlightPage.java
+ co.com.devco.certification.userinterfaces.FlightPage
+co/com/devco/certification/tasks/SearchStays.java
+ co.com.devco.certification.tasks.SearchStays
+co/com/devco/certification/interactions/SelectDate.java
+ co.com.devco.certification.interactions.SelectDate
+co/com/devco/certification/userinterfaces/StayPage.java
+ co.com.devco.certification.userinterfaces.StayPage

@@ -8,23 +8,20 @@ import net.serenitybdd.screenplay.actions.Click;
 
 public class SelectOptionStays implements Task {
 
-    private String punctuation;
-    private String distance;
+    private String message;
 
-    public SelectOptionStays(String punctuation, String distance) {
-        this.punctuation = punctuation;
-        this.distance = distance;
+    public SelectOptionStays(String message) {
+        this.message = message;
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
             actor.attemptsTo(
-                    Click.on(SearchStaysPage.BUTTON_POINTS.of(punctuation)),
-                    Click.on(SearchStaysPage.BUTTON_STARS.of(distance))
+                    Click.on(SearchStaysPage.BUTTON_FILTER.of(message))
             );
     }
 
-    public static SelectOptionStays withFilters(String punctuation, String distance) {
-        return Tasks.instrumented(SelectOptionStays.class, punctuation,distance);
+    public static SelectOptionStays withFilters(String message) {
+        return Tasks.instrumented(SelectOptionStays.class, message);
     }
 }

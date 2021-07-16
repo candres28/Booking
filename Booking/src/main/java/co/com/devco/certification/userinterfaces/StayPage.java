@@ -11,11 +11,17 @@ public class StayPage {
     public static final Target BUTTON_DATEPICKER = Target.the("button open datepicker")
             .locatedBy("//div[@class='xp__dates-inner']");
 
-    public static final Target SELECT_CHECKIN = Target.the("select date to checkin {0}")
-            .locatedBy("//td[@data-date='{0}']");
+    public static final Target INPUT_YEAR = Target.the("input year")
+            .locatedBy("//div[@class='bui-calendar__month']");
 
-    public static final Target SELECT_CHECKOUT = Target.the("select date to checkout {0}")
-            .locatedBy("//td[@data-date='{0}']");
+    public static final Target BUTTON_NEXT = Target.the("button next")
+            .locatedBy("//*[@class='bui-calendar__control bui-calendar__control--next' or @id='stl-jam-cal-nextMonth']");
+
+    public static final Target INPUT_DAY = Target.the("input day {0}")
+            .locatedBy("//span[text()='{0}']");
+
+    public static final Target MESSAGE_ALERT = Target.the("message alert")
+            .locatedBy("(//div[@class='fe_banner__message '])[2]");
 
     public static final Target BUTTON_SEARCH = Target.the("button search stays")
             .locatedBy("//span[contains(text(),'Buscar')]");

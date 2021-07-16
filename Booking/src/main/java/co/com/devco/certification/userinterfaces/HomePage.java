@@ -16,4 +16,11 @@ public class HomePage {
 
     public static final Target LABEL_YOUR_ACCOUNT = Target.the("Label your account")
             .located(By.id("profile-menu-trigger--title"));
+
+    public static final Target BUTTON_TAXIS = Target.the("Button option taxis")
+            .locatedBy("//span[contains(text(),'Taxis aeropuerto')]");
+
+
+
+
 }

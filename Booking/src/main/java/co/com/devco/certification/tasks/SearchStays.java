@@ -1,5 +1,6 @@
 package co.com.devco.certification.tasks;
 
+import co.com.devco.certification.interactions.SelectDate;
 import co.com.devco.certification.models.Stay;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -23,8 +24,8 @@ public class SearchStays implements Task {
                 Click.on(BUTTON_STAYS),
                 Enter.theValue(stay.getDestination()).into(INPUT_DESTINATION),
                 Click.on(BUTTON_DATEPICKER),
-                Click.on(SELECT_CHECKIN.of(stay.getCheckin())),
-                Click.on(SELECT_CHECKOUT.of(stay.getCheckout())),
+                SelectDate.toStay(stay.getCheckin(),INPUT_YEAR,INPUT_DAY),
+                SelectDate.toStay(stay.getCheckout(),INPUT_YEAR,INPUT_DAY),
                 Click.on(BUTTON_SEARCH)
         );
     }

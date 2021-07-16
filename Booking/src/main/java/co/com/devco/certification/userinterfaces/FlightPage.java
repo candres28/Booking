@@ -35,6 +35,12 @@ public class FlightPage {
     public static final Target INPUT_DATE  = Target.the("input date {0}")
             .locatedBy("//div[@aria-label='{0}']");
 
+    public static final Target INPUT_YEAR_FLIGHT = Target.the("input year")
+            .locatedBy("(//div[@class='_ijM _iAr _iaB _idE _iXr'])[2]");
+
+    public static final Target INPUT_DAY_FLIGHT = Target.the("input day flight {0}")
+            .locatedBy("(//*[text()='{0}'])[2]");
+
     public static final Target BUTTON_SEARCH = Target.the("button search flights")
             .locatedBy("//div[@class='col _iac _iad _iae _iaa _iab _iys _iyv _iyq _iAU _iAV _izh _iaR _h-8 _63 centre']");
 
