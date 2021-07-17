@@ -16,7 +16,7 @@ public class ManualTestStepDefinitions {
     }
 
     @Given("^(.*)$")
-    public void manualTestTarvelocity(String step) {
+    public void manualTest(String step) {
         validate(step, scenario.getName());
     }
 
