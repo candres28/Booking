@@ -1,3 +1,5 @@
+.idea
+
 #Booking
 
 Booking/.gradle
@@ -13,3 +15,5 @@ BookingManual/.idea
 BookingManual/history
 BookingManual/target
 BookingManual/settings.gradle
+
+
