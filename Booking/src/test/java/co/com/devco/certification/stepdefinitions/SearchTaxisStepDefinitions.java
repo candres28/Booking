@@ -1,11 +1,14 @@
 package co.com.devco.certification.stepdefinitions;
 
+import co.com.devco.certification.exceptions.CreateAccountException;
 import co.com.devco.certification.models.Taxi;
 import co.com.devco.certification.questions.Message;
 import co.com.devco.certification.tasks.OpenWeb;
 import co.com.devco.certification.tasks.SearchTaxi;
 import co.com.devco.certification.tasks.SelectOptionTaxis;
 import co.com.devco.certification.userinterfaces.SearchTaxiPage;
+import co.com.devco.certification.utils.constants.ExceptionsConstants;
+import co.com.devco.certification.utils.constants.GeneralConstants;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,33 +21,36 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 
+import static co.com.devco.certification.utils.constants.GeneralConstants.*;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class SearchTaxisStepDefinitions {
 
-    @Managed(driver = "chrome")
+    @Managed(driver = CHROME)
     private WebDriver hisBrowser;
 
     @Before
     public void setUp() {
         OnStage.setTheStage(new OnlineCast());
-        OnStage.theActorCalled("User");
+        OnStage.theActorCalled(USER);
     }
 
     @Given("^The user is on the website of the reservation page and enters the data to search for a taxi$")
-    public void the_user_is_on_the_website_of_the_reservation_page_and_enters_the_data_to_search_for_a_taxi(List<Taxi> taxiList) {
+    public void TheUserIsOnTheWebsiteOfTheReservationPageAndEntersTheDataToSearchForATaxi(List<Taxi> taxiList) {
         OnStage.theActorInTheSpotlight().wasAbleTo(OpenWeb.site()
                 , SearchTaxi.withData(taxiList.get(0)));
     }
 
     @When("^he need Add you return date (.*)$")
-    public void he_need_Add_you_return_date_August(String date) {
+    public void HeNeedAddYouReturnDate(String date) {
         OnStage.theActorInTheSpotlight().attemptsTo(SelectOptionTaxis.toSearch(date));
     }
 
     @Then("^he can see the total price (.*)$")
-    public void he_can_see_the_total_price(String price) {
-        OnStage.theActorInTheSpotlight().should(seeThat(Message.isTo(SearchTaxiPage.LABEL_PRICE), Matchers.containsString(price)));
+    public void HeCanSeeTheTotalPrice(String price) {
+        OnStage.theActorInTheSpotlight().should(seeThat(Message.isTo(SearchTaxiPage.LABEL_PRICE),
+                Matchers.containsString(price)).orComplainWith(CreateAccountException.class,
+                ExceptionsConstants.TAXI_ERROR));
 
     }
 

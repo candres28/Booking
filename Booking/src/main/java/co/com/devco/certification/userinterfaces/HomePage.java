@@ -21,7 +21,9 @@ public class HomePage {
             .locatedBy("//span[contains(text(),'Taxis aeropuerto')]");
 
     public static final Target BUTTON_NEXT = Target.the("button next")
-            .locatedBy("//*[@class='bui-calendar__control bui-calendar__control--next' or @id='stl-jam-cal-nextMonth' or @class='rw-c-date-picker__btn rw-c-date-picker__btn--next gb-u-p' or @class='rw-c-date-picker__btn rw-c-date-picker__btn--next gb-u-p']");
+            .locatedBy("//*[@class='bui-calendar__control bui-calendar__control--next' " +
+                    "or @id='stl-jam-cal-nextMonth' or @class='rw-c-date-picker__btn rw-c-date-picker__btn--next gb-u-p' " +
+                    "or @class='rw-c-date-picker__btn rw-c-date-picker__btn--next gb-u-p']");
 
 
 

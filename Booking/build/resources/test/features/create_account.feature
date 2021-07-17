@@ -3,6 +3,7 @@ Feature: create a user account
   I need to create account
   For to configure my user data
 
+  @CreateUser
   Scenario: Create a user account
     Given that the user is on the main page
     When enter the data for registration

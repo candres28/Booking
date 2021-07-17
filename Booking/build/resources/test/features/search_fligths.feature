@@ -3,6 +3,7 @@ Feature: Search flights
   I need to find a flights
   For my next trip to Tourist
 
+  @SearchFlight
   Scenario: Find my outbound flight for my tourist trip
     Given The user is on the Booking Webpage in the flights option and enters the search parameters
       | from | to  | option   | type             | date           |

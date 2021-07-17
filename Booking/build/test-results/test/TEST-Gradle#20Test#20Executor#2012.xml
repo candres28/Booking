@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Gradle Test Executor 2" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-16T17:18:39" hostname="DESKTOP-5EVHUP8" time="0.12">
+<testsuite name="Gradle Test Executor 12" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-17T00:20:46" hostname="DESKTOP-5EVHUP8" time="0.089">
   <properties/>
-  <testcase name="failed to execute tests" classname="Gradle Test Executor 2" time="0.12">
-    <failure message="org.gradle.api.internal.tasks.testing.TestSuiteExecutionException: Could not complete execution for Gradle Test Executor 2." type="org.gradle.api.internal.tasks.testing.TestSuiteExecutionException">org.gradle.api.internal.tasks.testing.TestSuiteExecutionException: Could not complete execution for Gradle Test Executor 2.
+  <testcase name="failed to execute tests" classname="Gradle Test Executor 12" time="0.089">
+    <failure message="org.gradle.api.internal.tasks.testing.TestSuiteExecutionException: Could not complete execution for Gradle Test Executor 12." type="org.gradle.api.internal.tasks.testing.TestSuiteExecutionException">org.gradle.api.internal.tasks.testing.TestSuiteExecutionException: Could not complete execution for Gradle Test Executor 12.
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -31,9 +31,9 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: org.junit.platform.commons.PreconditionViolationException: Cannot create Launcher without at least one TestEngine; consider adding an engine implementation JAR to the classpath
 	at org.junit.platform.commons.util.Preconditions.condition(Preconditions.java:296)
-	at org.junit.platform.launcher.core.DefaultLauncher.&lt;init&gt;(DefaultLauncher.java:48)
-	at org.junit.platform.launcher.core.LauncherFactory.create(LauncherFactory.java:105)
-	at org.junit.platform.launcher.core.LauncherFactory.create(LauncherFactory.java:75)
+	at org.junit.platform.launcher.core.DefaultLauncher.&lt;init&gt;(DefaultLauncher.java:62)
+	at org.junit.platform.launcher.core.LauncherFactory.create(LauncherFactory.java:91)
+	at org.junit.platform.launcher.core.LauncherFactory.create(LauncherFactory.java:67)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:97)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
 	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
